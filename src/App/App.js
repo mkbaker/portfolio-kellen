@@ -10,6 +10,8 @@ import "./App.css";
 
 //components
 import Navbar from "../Navbar/Navbar";
+import Headshot from "../Headshot/Headshot";
+
 
 class App extends Component {
   render() {
@@ -17,6 +19,7 @@ class App extends Component {
       <div>
         <Router>
           <Navbar />
+          <Headshot />
         </Router>
       </div>
     );

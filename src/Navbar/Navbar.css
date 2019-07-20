@@ -5,6 +5,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content:space-around;
+    border-bottom: 1px solid black;
 }
 
 .nav-link {

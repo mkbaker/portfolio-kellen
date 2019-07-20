@@ -10,7 +10,8 @@ import "./App.css";
 
 //components
 import Navbar from "../Navbar/Navbar";
-import Headshot from "../Headshot/Headshot";
+import About from "../About/About";
+
 
 
 class App extends Component {
@@ -19,7 +20,9 @@ class App extends Component {
       <div>
         <Router>
           <Navbar />
-          <Headshot />
+
+          <Route exact path='/about' component={About} />
+          
         </Router>
       </div>
     );

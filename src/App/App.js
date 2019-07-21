@@ -11,6 +11,7 @@ import "./App.css";
 //components
 import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
+import Work from "../Work/Work";
 
 
 
@@ -22,6 +23,7 @@ class App extends Component {
           <Navbar />
 
           <Route exact path='/about' component={About} />
+          <Route exact path='/work' component={Work} />
           
         </Router>
       </div>

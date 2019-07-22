@@ -6,7 +6,7 @@ class Headshot extends Component {
     render() {
         return (
         <div className="imageCropper">
-        <img src={kellenbaker} alt="Me" className="homeHeadshot"/>
+        <img src={kellenbaker} alt="Me" className="homeHeadshot" />
         </div>
         )
     }

@@ -10,6 +10,7 @@ import WOW from "wowjs";
 
 //components 
 import Headshot from "../Headshot/Headshot";
+import Emoji from "../Emoji/Emoji";
 
 //material-ui
 import Grid from "@material-ui/core/Grid";
@@ -23,7 +24,7 @@ class About extends Component {
     return (
       <div className="introDiv">
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={4} className="wow rollIn">
             <Headshot />
           </Grid>
           <Grid item xs={8} className="introText">
@@ -31,7 +32,7 @@ class About extends Component {
             <p className="wow lightSpeedIn">
               I'm a software engineer, musician, and artist. <br />
               I love to learn and explore every day. <br />
-              Let's make something cool together.
+              Let's make something cool together. <Emoji symbol="🤘" label="the horns" />
             </p>
           </Grid>
         </Grid>

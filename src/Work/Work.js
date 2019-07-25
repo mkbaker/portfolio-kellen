@@ -11,6 +11,7 @@ import pic from "../images/githubActivity.png";
 import kellenbaker from "../images/kellenbaker.jpg";
 import publicSpeaking from "../images/publicSpeaking.jpg";
 import silentAction from "../images/silentAction.png";
+
 //semantic ui
 import { Card, Icon, Image } from "semantic-ui-react";
 import WOW from "wowjs";

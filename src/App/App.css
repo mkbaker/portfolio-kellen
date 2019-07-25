@@ -48,12 +48,19 @@
   width: auto;
 }
 
+.aboutPagePhoto {
+  margin-right: 10px;
+}
+
 .introDiv {
-  height: 500px;
+  height: auto;
   width: 50%;
   margin: 25px auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .introText {
   border-left: 2px solid black;
+  padding-left: 15px;
 }

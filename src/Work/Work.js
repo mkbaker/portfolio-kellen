@@ -10,6 +10,7 @@ import "./Work.css";
 import pic from "../images/githubActivity.png";
 import kellenbaker from "../images/kellenbaker.jpg";
 import publicSpeaking from "../images/publicSpeaking.jpg";
+import silentAction from "../images/silentAction.png";
 //semantic ui
 import { Card, Icon, Image } from "semantic-ui-react";
 import WOW from "wowjs";
@@ -29,6 +30,10 @@ class Work extends Component {
     window.open("https://www.linkedin.com/in/kellen-baker/", "_blank");
   };
 
+  handleSilentAction = () => {
+    window.open("https://silent-action.herokuapp.com/#/home", "_blank");
+  }
+
   //this link needs to be changed upon creation of CV page
   handleCV = () => {
     this.props.history.push("/about");
@@ -36,7 +41,6 @@ class Work extends Component {
 
   render() {
     return (
-      
       <div className="containerDiv">
         <Card onClick={this.handleGithub} className="wow flipInY">
           <Image src={pic} />
@@ -56,7 +60,16 @@ class Work extends Component {
           </Card.Content>
         </Card>
 
-        <Card onClick={this.handleCV} className="wow flipInY">
+        <Card onClick={this.handleSilentAction} className="wow flipInY">
+          <Image src={silentAction} />
+          <Card.Content>
+            <Card.Header>Silent Action</Card.Header>
+            <Card.Description>A crowdfunding platform where users can host online auctions to benefit community members facing medical expenses.</Card.Description>
+          </Card.Content>
+        </Card>
+
+        {/* i'll active this code once i have the CV component built */}
+        {/* <Card onClick={this.handleCV} className="wow flipInY">
           <Image src={publicSpeaking} />
           <Card.Content>
             <Card.Header>Resume / CV</Card.Header>
@@ -64,7 +77,7 @@ class Work extends Component {
               View my resume and full CV here.
             </Card.Description>
           </Card.Content>
-        </Card>
+        </Card> */}
       </div>
     );
   }
